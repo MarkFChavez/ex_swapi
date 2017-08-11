@@ -6,40 +6,19 @@ defmodule ExSwapi.Impl do
   @films_uri      "#{@baseuri}/films/"
   @people_uri     "#{@baseuri}/people/"
   @planets_uri    "#{@baseuri}/planets/"
-  @spaceships_uri "#{@baseuri}/spaceships/"
   @species_uri    "#{@baseuri}/species/"
   @vehicles_uri   "#{@baseuri}/vehicles/"
+  @starships_uri  "#{@baseuri}/starships/"
 
   alias ExSwapi.Request
 
-  def all(:films) do
-    @films_uri
-    |> Request.get()
-  end
+  def all(:films),      do: @films_uri |> make_request
+  def all(:people),     do: @people_uri |> make_request
+  def all(:planets),    do: @planets_uri |> make_request
+  def all(:species),    do: @species_uri |> make_request
+  def all(:vehicles),   do: @vehicles_uri |> make_request
+  def all(:starships),  do: @starships_uri |> make_request
 
-  def all(:people) do
-    @people_uri
-    |> Request.get()
-  end
-
-  def all(:planets) do
-    @planets_uri
-    |> Request.get()
-  end
-
-  def all(:spaceships) do
-    @spaceships_uri
-    |> Request.get()
-  end
-
-  def all(:species) do
-    @species_uri
-    |> Request.get()
-  end
-
-  def all(:vehicles) do
-    @vehicles_uri
-    |> Request.get()
-  end
+  defp make_request(uri), do: Request.get(uri)
 
 end
