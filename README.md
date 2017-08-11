@@ -1,6 +1,8 @@
 # ExSwapi
 
-**TODO: Add description**
+## Usage
+
+Refer to [wiki](https://github.com/mrkjlchvz/ex_swapi/wiki)
 
 ## Installation
 
