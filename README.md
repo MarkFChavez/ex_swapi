@@ -14,6 +14,10 @@ ExSwapi.find(:planets, 1)
 ExSwapi.search(:planets, "jupiter")
 ```
 
+### TODO (Upcoming features)
+
+Refer to [wiki](https://github.com/mrkjlchvz/ex_swapi/wiki).
+
 ## Installation
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed
