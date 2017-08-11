@@ -1,5 +1,7 @@
 # ExSwapi
 
+Wrapper for **The Star Wars API**
+
 ## Usage
 
 Refer to [wiki](https://github.com/mrkjlchvz/ex_swapi/wiki)
