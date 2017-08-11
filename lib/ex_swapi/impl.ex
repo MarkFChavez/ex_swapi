@@ -28,6 +28,14 @@ defmodule ExSwapi.Impl do
   def find(:vehicles,  id), do: "#{@vehicles_uri}#{id}/"  |> make_request
   def find(:starships, id), do: "#{@starships_uri}#{id}/" |> make_request
 
+  # SEARCH
+  def search(:films,     query), do: "#{@films_uri}?search=#{query}"     |> make_request
+  def search(:people,    query), do: "#{@people_uri}?search=#{query}"    |> make_request
+  def search(:planets,   query), do: "#{@planets_uri}?search=#{query}"   |> make_request
+  def search(:species,   query), do: "#{@species_uri}?search=#{query}"   |> make_request
+  def search(:vehicles,  query), do: "#{@vehicles_uri}?search=#{query}"  |> make_request
+  def search(:starships, query), do: "#{@starships_uri}?search=#{query}" |> make_request
+
   defp make_request(uri), do: Request.get(uri)
 
 end
