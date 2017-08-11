@@ -4,7 +4,41 @@ Wrapper for **The Star Wars API**
 
 ## Usage
 
-Refer to [wiki](https://github.com/mrkjlchvz/ex_swapi/wiki)
+**ex_swapi** is an Elixir wrapper of [The Star Wars API](http://swapi.co/).
+
+### API
+
+To get all resources.
+```elixir
+planets    = ExSwapi.Planets.all()
+vehicles   = ExSwapi.Vehicles.all()
+spaceships = ExSwapi.Spaceships.all()
+people     = ExSwapi.People.all()
+films      = ExSwapi.Films.all()
+species    = ExSwapi.Species.all()
+```
+
+To find a resource by ID.
+```elixir
+planets    = ExSwapi.Planets.find(1)
+vehicles   = ExSwapi.Vehicles.find(2)
+spaceships = ExSwapi.Spaceships.find(3)
+people     = ExSwapi.People.find(4)
+films      = ExSwapi.Films.find(5)
+species    = ExSwapi.Species.find(6)
+```
+
+You can also search records for a specific resource
+```elixir
+planets = ExSwapi.Planets.search("planet")
+```
+
+Or you can scrap those and just use these instead:
+```elixir
+ExSwapi.all("planets")
+ExSwapi.find("species", 1)
+ExSwapi.search("films", "star wars")
+```
 
 ## Installation
 

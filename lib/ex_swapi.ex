@@ -1,18 +1,5 @@
 defmodule ExSwapi do
-  @moduledoc """
-  Documentation for ExSwapi.
-  """
 
-  @doc """
-  Hello world.
+  # start here
 
-  ## Examples
-
-      iex> ExSwapi.hello
-      :world
-
-  """
-  def hello do
-    :world
-  end
 end
