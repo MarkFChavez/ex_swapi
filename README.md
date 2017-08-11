@@ -16,7 +16,7 @@ ExSwapi.search(:planets, "jupiter")
 
 ### TODO (Upcoming features)
 
-Refer to [wiki](https://github.com/mrkjlchvz/ex_swapi/wiki).
+Refer to [TODO.md](https://github.com/mrkjlchvz/ex_swapi/blob/master/TODO.md).
 
 ## Installation
 
