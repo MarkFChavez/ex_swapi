@@ -16,7 +16,8 @@ defmodule ExSwapi.Mixfile do
 
   defp deps do
     [
-      {:httpoison, "~> 0.12"}
+      {:httpoison, "~> 0.12"},
+      {:json, "~> 1.0"}
     ]
   end
 end
