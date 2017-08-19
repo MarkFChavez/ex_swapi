@@ -2,7 +2,7 @@ defmodule ExSwapi.Impl do
 
   @baseuri     "https://swapi.co/api"
 
-  # SWAPI.co
+  # SWAPI.co ENDPOINTS :)
   @films_uri      "#{@baseuri}/films/"
   @people_uri     "#{@baseuri}/people/"
   @planets_uri    "#{@baseuri}/planets/"
